@@ -24,6 +24,19 @@ Una aplicación móvil moderna, rápida y atractiva desarrollada en Flutter para
 * **Recomendaciones Algorítmicas:** Módulo de películas recomendadas ("Películas Similares") en la pantalla de detalles usando el motor de sugerencias de TMDB.
 * **Búsqueda Avanzada:** Buscador en tiempo real con *debounce* para optimizar las peticiones HTTP.
 
+## 📂 Estructura del Proyecto
+
+```text
+lib/
+ ├── models/       # Clases y modelos de datos generados a partir de las respuestas JSON.
+ ├── providers/    # Lógica de estado y consumo de la API de TMDB (MoviesProvider).
+ ├── screens/      # Vistas principales de la aplicación (HomeScreen, DetailsScreen, etc.).
+ ├── search/       # Lógica del buscador de películas (SearchDelegate).
+ ├── theme/        # Configuración global del tema visual de la aplicación.
+ ├── widgets/      # Componentes de UI reutilizables (CastingCards, MovieSlider, CardSwiper, etc.).
+ └── main.dart     # Punto de entrada de la app y configuración de Providers/Rutas.
+```
+
 ##  Tecnologías Usadas
 
 * **Framework:** [Flutter](https://flutter.dev/) (Dart)
